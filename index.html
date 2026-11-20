@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>zo official social media accounts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Click to Enter Overlay -->
+  <div class="enter-overlay" id="enterOverlay">
+    <span class="enter-text">click to enter...</span>
+  </div>
+
+  <div class="bg-layer"></div>
+  <div class="bg-vignette"></div>
+
+  <!-- Top-left Volume Control -->
+  <div class="audio-control">
+    <button class="audio-btn" id="muteBtn" title="Toggle Sound">
+      <i class="fa-solid fa-volume-high" id="muteIcon"></i>
+    </button>
+    <input
+      type="range"
+      id="volumeSlider"
+      class="volume-slider"
+      min="0"
+      max="1"
+      step="0.01"
+      value="0.5"
+    />
+  </div>
+
+  <!-- Main Bio Content -->
+  <main class="bio-wrapper">
+    <h1 class="username">Z O</h1>
+
+    <div class="badges-line">
+      <span>Streamer</span>
+      <span>|</span>
+      <span>Caster</span>
+      <span>|</span>
+      <span>Coder</span>
+    </div>
+
+    <div class="sub-status">
+      <i class="fa-solid fa-location-dot" style="font-size: 0.72rem;"></i>
+      <span>zo still learning code</span>
+    </div>
+
+    <!-- Social Links -->
+    <div class="socials">
+      <a href="https://www.tiktok.com/@tykacs" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://open.spotify.com/user/31gjehj4tvjhiw3k2owr3wor7q6q" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+      <a href="https://discord.gg/8eK7bs3bmR" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+      <a href="https://x.com/RemzxGaming" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="mailto:bayarbaatarbattulga5959@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <!-- Views -->
+    <div class="views-row">
+      <i class="fa-regular fa-eye"></i>
+      <span id="viewCount">1,142,195</span>
+    </div>
+
+    <!-- Music Player -->
+    <div class="player-card">
+      <img
+        class="cover-art"
+        src="./images.jpg"
+        alt="Cover"
+      />
+      <div class="player-main">
+        <div class="track-title">margad - tuulai party (Official Video)</div>
+        <div class="progress-wrap">
+          <span id="currentTime">0:00</span>
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <span id="durationTime">0:00</span>
+        </div>
+      </div>
+      <div class="player-controls">
+        <button class="ctrl-btn" id="prevBtn" title="Previous"><i class="fa-solid fa-backward-step"></i></button>
+        <button class="ctrl-btn" id="playBtn" title="Play / Pause"><i class="fa-solid fa-play" id="playIcon"></i></button>
+        <button class="ctrl-btn" id="nextBtn" title="Next"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
