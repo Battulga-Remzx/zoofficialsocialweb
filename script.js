@@ -1,5 +1,5 @@
 // Өөрийн MP3 файлын нэрийг энд тавина
-const audio = new Audio("./tuulai.mp3");
+const audio = new Audio("./music.mp3");
 audio.loop = true;
 audio.volume = 0.5;
 audio.autoplay = true;
